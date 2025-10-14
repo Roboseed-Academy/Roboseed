@@ -8,17 +8,15 @@
         content="RoboSeed Academy - زرع بذور الابتكار، حصاد مستقبل رقمي. برامج تعليمية في البرمجة والروبوتات للأطفال">
     <title>RoboSeed Academy - أكاديمية روبوسيد</title>
 
-    <!-- Preload critical fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500&family=Changa:wght@600;700&family=Poppins:wght@300;400;600;700&family=Nunito+Sans:wght@300;400;600&family=Orbitron:wght@700&display=swap"
         rel="stylesheet">
 
-    <!-- Main CSS -->
     <link rel="stylesheet" href="roboseed.css">
 
-    <!-- Favicon -->
+    
     <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1LAYrtOrqfvhYeoAE1msQALrVLi0UlhiE">
 </head>
 
@@ -26,7 +24,7 @@
     <!-- Skip link for accessibility -->
     <a href="#main-content" class="skip-link" data-translate="skip-link">انتقل إلى المحتوى الرئيسي</a>
 
-    <!-- Amazon-Style Navigation -->
+    <!-- Navigation -->
     <header class="nav" aria-label="الملاحة الرئيسية">
         <div class="container">
             <div class="nav-content">
@@ -76,7 +74,7 @@
         </div>
     </header>
 
-    <!-- Amazon-Style Sidebar -->
+    <!-- Sidebar -->
     <div class="sidebar-overlay" aria-hidden="true"></div>
     <aside class="sidebar" id="sidebar" aria-label="القائمة الجانبية">
         <div class="sidebar-header">
@@ -506,18 +504,16 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-        // Amazon-Style Mobile Navigation
+        //  Mobile Navigation
         document.addEventListener('DOMContentLoaded', function () {
-            // Elements
             const navToggle = document.querySelector('.nav-toggle');
             const sidebarOverlay = document.querySelector('.sidebar-overlay');
             const sidebar = document.querySelector('.sidebar');
             const sidebarClose = document.querySelector('.sidebar-close');
             const body = document.body;
 
-            // Open sidebar function
+            
             function openSidebar() {
                 sidebarOverlay.classList.add('active');
                 sidebar.classList.add('active');
@@ -528,26 +524,22 @@
                 // Trap focus inside sidebar
                 document.querySelector('main').setAttribute('inert', '');
 
-                // Add event listener for escape key
+                // escape key handler
                 document.addEventListener('keydown', handleEscapeKey);
             }
-
-            // Close sidebar function
+            
             function closeSidebar() {
                 sidebarOverlay.classList.remove('active');
                 sidebar.classList.remove('active');
                 navToggle.classList.remove('active');
                 navToggle.setAttribute('aria-expanded', 'false');
                 body.style.overflow = '';
-
-                // Remove inert attribute
+                
                 document.querySelector('main').removeAttribute('inert');
 
-                // Remove event listener for escape key
+                // more escape key logic
                 document.removeEventListener('keydown', handleEscapeKey);
             }
-
-            // Handle escape key press
             function handleEscapeKey(event) {
                 if (event.key === 'Escape') {
                     closeSidebar();
@@ -566,12 +558,12 @@
                 });
             }
 
-            // Close sidebar when close button is clicked
+            // Close sidebar with close button 
             if (sidebarClose) {
                 sidebarClose.addEventListener('click', closeSidebar);
             }
 
-            // Close sidebar when clicking on overlay
+            // Close sidebar when overlay
             if (sidebarOverlay) {
                 sidebarOverlay.addEventListener('click', function (e) {
                     if (e.target === sidebarOverlay) {
@@ -588,14 +580,14 @@
                 });
             });
 
-            // Handle window resize
+            // window resize handling 
             window.addEventListener('resize', function () {
                 if (window.innerWidth >= 1024 && sidebar.classList.contains('active')) {
                     closeSidebar();
                 }
             });
 
-            // Enhanced program filtering
+            // program filtering
             const filterButtons = document.querySelectorAll('.filter-btn');
             const programCards = document.querySelectorAll('.program-card');
 
@@ -603,7 +595,7 @@
                 button.addEventListener('click', function () {
                     const filterValue = this.getAttribute('data-filter');
 
-                    // Update active state
+                    // active state
                     filterButtons.forEach(btn => {
                         btn.classList.remove('filter-btn--active');
                         btn.setAttribute('aria-selected', 'false');
@@ -632,11 +624,11 @@
                 });
             });
 
-            // Language switching functionality
+            // Language switch
             const langButtons = document.querySelectorAll('.lang-btn');
             const htmlElement = document.documentElement;
 
-            // Language content storage
+            // translationa
             const translations = {
                 ar: {
                     // Navigation & Skip Link
@@ -762,10 +754,10 @@
                 }
             };
 
-            // Set initial language
+            // initial language
             let currentLang = 'ar';
 
-            // Language switch functionality
+            // more Language switch logic
             langButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     const lang = this.getAttribute('data-lang');
@@ -810,10 +802,10 @@
                 }
             }
 
-            // Update current year in footer
+            // footer Update current year
             document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            // Smooth scrolling for anchor links
+            // scrolling smoothly 
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     const href = this.getAttribute('href');
@@ -830,7 +822,7 @@
                 });
             });
 
-            // Lazy load images
+            // Lazy load
             const lazyImages = document.querySelectorAll('img[loading="lazy"]');
 
             if ('IntersectionObserver' in window) {
@@ -846,7 +838,7 @@
 
                 lazyImages.forEach(img => imageObserver.observe(img));
             } else {
-                // Fallback for browsers without IntersectionObserver
+                // Fallback for browsers without IntersectionObserver (you might need it -_-)
                 lazyImages.forEach(img => {
                     img.classList.add('loaded');
                 });
