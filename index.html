@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="RoboSeed Academy - زرع بذور الابتكار، حصاد مستقبل رقمي. برامج تعليمية في البرمجة والروبوتات للأطفال">
+    <title>RoboSeed Academy - أكاديمية روبوسيد</title>
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Tajawal:wght@300;400;500&family=Changa:wght@600;700&family=Poppins:wght@300;400;600;700&family=Nunito+Sans:wght@300;400;600&family=Orbitron:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="roboseed.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1LAYrtOrqfvhYeoAE1msQALrVLi0UlhiE">
+</head>
+
+<body class="arabic-layout">
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link" data-translate="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+    <!-- Amazon-Style Navigation -->
+    <header class="nav" aria-label="الملاحة الرئيسية">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="#hero" class="nav-logo" aria-label="RoboSeed Academy - العودة إلى الصفحة الرئيسية">
+                    <div class="logo-placeholder">
+                        <img src="https://lh3.googleusercontent.com/d/1tb5-nvankw9dWYscYZo1-KHRT7Ag_TEJ"
+                            alt="RoboSeed Academy Logo" width="50" height="50">
+                    </div>
+                </a>
+
+                <!-- Language Switch - Mobile Only -->
+                <div class="language-switch-container mobile-only">
+                    <div class="language-switch" role="group" aria-label="اختر اللغة">
+                        <button class="lang-btn active" data-lang="ar" aria-pressed="true">العربية</button>
+                        <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+                    </div>
+                </div>
+
+                <!-- Hamburger Menu -->
+                <button class="nav-toggle mobile-only" aria-expanded="false" aria-label="قائمة الملاحة"
+                    aria-controls="sidebar">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Desktop Navigation Menu -->
+                <nav class="nav-menu desktop-only" aria-label="التنقل الرئيسي">
+                    <ul class="nav-list" role="list">
+                        <li><a href="#hero" class="nav-link" data-translate="nav-home">الرئيسية</a></li>
+                        <li><a href="#vision-mission" class="nav-link" data-translate="nav-vision">الرؤية والرسالة</a>
+                        </li>
+                        <li><a href="#programs" class="nav-link" data-translate="nav-programs">البرامج</a></li>
+                        <li><a href="#contact" class="nav-link" data-translate="nav-contact">اتصل بنا</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Language Switch - Desktop Only -->
+                <div class="language-switch-container desktop-only">
+                    <div class="language-switch" role="group" aria-label="اختر اللغة">
+                        <button class="lang-btn active" data-lang="ar" aria-pressed="true">العربية</button>
+                        <button class="lang-btn" data-lang="en" aria-pressed="false">English</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Amazon-Style Sidebar -->
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+    <aside class="sidebar" id="sidebar" aria-label="القائمة الجانبية">
+        <div class="sidebar-header">
+            <h3 data-translate="menu-title">القائمة</h3>
+            <button class="sidebar-close" aria-label="إغلاق القائمة">×</button>
+        </div>
+
+        <div class="sidebar-user">
+            <div class="sidebar-user-icon" aria-hidden="true">👤</div>
+            <div>
+                <div data-translate="welcome-message">مرحباً بك في روبوسيد</div>
+                <small data-translate="explore-programs">استكشف برامجنا التعليمية</small>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="التنقل الجانبي">
+            <ul class="sidebar-menu" role="list">
+                <li class="sidebar-item">
+                    <a href="#hero" class="sidebar-link active" data-translate="nav-home">
+                        <span class="sidebar-icon" aria-hidden="true">🏠</span>
+                        الرئيسية
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#vision-mission" class="sidebar-link" data-translate="nav-vision">
+                        <span class="sidebar-icon" aria-hidden="true">👁️</span>
+                        الرؤية والرسالة
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#programs" class="sidebar-link" data-translate="nav-programs">
+                        <span class="sidebar-icon" aria-hidden="true">📚</span>
+                        البرامج التعليمية
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#contact" class="sidebar-link" data-translate="nav-contact">
+                        <span class="sidebar-icon" aria-hidden="true">📞</span>
+                        اتصل بنا
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        
+    </aside>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Logo -->
+                <div class="hero-logo">
+                    <img src="https://lh3.googleusercontent.com/d/1IxE7U5tTzzDTi74ahs_esxu-TfztGiUZ"
+                        alt="RoboSeed Academy" width="140" height="140" loading="eager">
+                </div>
+
+                <h1 id="hero-title" class="hero-tagline" data-translate="hero-tagline">زرع بذور الابتكار، حصاد مستقبل
+                    رقمي</h1>
+                <p class="hero-description" data-translate="hero-description">أكاديمية روبوسيد تقدم برامج تعليمية متقدمة
+                    في البرمجة والروبوتات للأطفال من سن 7 سنوات فما فوق</p>
+
+                <div class="hero-buttons">
+                    <a href="#programs" class="btn btn--primary" data-translate="hero-programs">استكشف البرامج</a>
+                    <a href="#contact" class="btn btn--secondary" data-translate="hero-contact">اتصل بنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <!-- Vision & Mission Section -->
+        <section class="section section--vision-mission" id="vision-mission" aria-labelledby="vision-mission-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title" id="vision-mission-title" data-translate="vision-title">رؤيتنا ورسالتنا
+                    </h2>
+                    <p class="section-subtitle" data-translate="vision-subtitle">نعمل على بناء جيل مبتكر قادر على قيادة
+                        المستقبل التكنولوجي</p>
+                </header>
+
+                <div class="vision-grid grid grid--2-cols">
+                    <article class="card card--vision">
+                        <div class="card__icon">
+                            <img style="width: 100%;"
+                                src="https://lh3.googleusercontent.com/d/1tQY0b6lr-hQeIJIpPJO268irYAgT66YI" alt=""
+                                class="card__image" width="80" height="80" loading="lazy">
+                        </div>
+                        <h3 class="card__title" data-translate="vision-heading">الرؤية</h3>
+                        <p class="card__text" data-translate="vision-text">أن نكون الرواد في تعليم البرمجة والروبوتات
+                            للأطفال في العالم العربي، ونشر ثقافة الابتكار التكنولوجي بين الأجيال الناشئة.</p>
+                    </article>
+
+                    <article class="card card--mission">
+                        <div class="card__icon">
+                            <img style="width: 100%;"
+                                src="https://lh3.googleusercontent.com/d/1pOEb1AJsfyLo-9wpfm85gLS1lRk_ijNJ" alt=""
+                                class="card__image" width="80" height="80" loading="lazy">
+                        </div>
+                        <h3 class="card__title" data-translate="mission-heading">الرسالة</h3>
+                        <p class="card__text" data-translate="mission-text">تمكين الأطفال من عمر 7 سنوات فما فوق من
+                            مهارات البرمجة والروبوتات، وتطوير قدراتهم الإبداعية والتحليلية من خلال بيئة تعليمية محفزة
+                            وتجارب عملية مبتكرة.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section class="section section--programs" id="programs" aria-labelledby="programs-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title" id="programs-title" data-translate="programs-title">برامجنا التعليمية</h2>
+                    <p class="section-subtitle" data-translate="programs-subtitle">برامج متخصصة مصممة خصيصًا لتنمية
+                        مهارات الأطفال التقنية</p>
+                </header>
+
+                <div class="program-filters" role="tablist" aria-label="تصفية البرامج">
+                    <button class="filter-btn filter-btn--active" data-filter="all" role="tab" aria-selected="true"
+                        data-translate="filter-all">جميع البرامج</button>
+                    <button class="filter-btn" data-filter="programming" role="tab" aria-selected="false"
+                        data-translate="filter-programming">برمجة</button>
+                    <button class="filter-btn" data-filter="robotics" role="tab" aria-selected="false"
+                        data-translate="filter-robotics">روبوتات</button>
+                    <button class="filter-btn" data-filter="training" role="tab" aria-selected="false"
+                        data-translate="filter-training">تدريب المدربين</button>
+                </div>
+
+                <div class="program-grid grid grid--3-cols" id="programs-container">
+                    <!-- Programming Tracks -->
+                    <article class="program-card card card--programming" data-category="programming">
+                        <h3 class="program-card__title english-tech">Scratch Programming</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👦</span>
+                                <span class="meta-item__text"><span data-translate="program-age">العمر</span>: 7-9 <span
+                                        data-translate="program-years">سنوات</span></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>: 12
+                                    <span data-translate="program-weeks">أسبوع</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description">تعلم أساسيات البرمجة من خلال السحب والإفلات بطريقة ممتعة
+                            وتفاعلية</p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">المنطق البرمجي</span></li>
+                                <li><span class="topic-tag">الحلقات التكرارية</span></li>
+                                <li><span class="topic-tag">المتغيرات</span></li>
+                                <li><span class="topic-tag">إنشاء الألعاب</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="program-card card card--programming" data-category="programming">
+                        <h3 class="program-card__title english-tech">Python</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👦</span>
+                                <span class="meta-item__text"><span data-translate="program-age">العمر</span>: 10-12
+                                    <span data-translate="program-years">سنوات</span></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>: 16
+                                    <span data-translate="program-weeks">أسبوع</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description">لغة برمجة قوية وسهلة للمبتدئين، مثالية لبناء أساس متين في
+                            البرمجة</p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">تركيب اللغة</span></li>
+                                <li><span class="topic-tag">الهياكل الشرطية</span></li>
+                                <li><span class="topic-tag">الدوال</span></li>
+                                <li><span class="topic-tag">مشاريع عملية</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="program-card card card--programming" data-category="programming">
+                        <h3 class="program-card__title english-tech">++C</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👦</span>
+                                <span class="meta-item__text"><span data-translate="program-age">العمر</span>: 13+ <span
+                                        data-translate="program-years">سنوات</span></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>: 20
+                                    <span data-translate="program-weeks">أسبوع</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description">لغة برمجة متقدمة لتعلم مفاهيم البرمجة العميقة وتطبيقاتها
+                        </p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">البرمجة الكائنية</span></li>
+                                <li><span class="topic-tag">هياكل البيانات</span></li>
+                                <li><span class="topic-tag">الخوارزميات</span></li>
+                                <li><span class="topic-tag">التطبيقات المتقدمة</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="program-card card card--programming" data-category="programming">
+                        <h3 class="program-card__title english-tech">Web Development</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👦</span>
+                                <span class="meta-item__text"><span data-translate="program-age">العمر</span>: 12+ <span
+                                        data-translate="program-years">سنوات</span></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>: 18
+                                    <span data-translate="program-weeks">أسبوع</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description">تعلم بناء مواقع ويب تفاعلية باستخدام HTML, CSS, و
+                            JavaScript</p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">HTML5</span></li>
+                                <li><span class="topic-tag">CSS3</span></li>
+                                <li><span class="topic-tag">JavaScript</span></li>
+                                <li><span class="topic-tag">التصميم المتجاوب</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Robotics Tracks -->
+                    <article class="program-card card card--robotics" data-category="robotics">
+                        <h3 class="program-card__title english-tech">Botley Robot</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👦</span>
+                                <span class="meta-item__text"><span data-translate="program-age">العمر</span>: 7-10
+                                    <span data-translate="program-years">سنوات</span></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>: 10
+                                    <span data-translate="program-weeks">أسبوع</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description">تعلم أساسيات البرمجة والروبوتات من خلال روبوت بوتلي
+                            التفاعلي</p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">التحكم بالروبوت</span></li>
+                                <li><span class="topic-tag">حل المتاهات</span></li>
+                                <li><span class="topic-tag">الاستشعار عن بعد</span></li>
+                                <li><span class="topic-tag">التحديات البرمجية</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="program-card card card--robotics" data-category="robotics">
+                        <h3 class="program-card__title english-tech">mBot</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👦</span>
+                                <span class="meta-item__text"><span data-translate="program-age">العمر</span>: 11+ <span
+                                        data-translate="program-years">سنوات</span></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>: 14
+                                    <span data-translate="program-weeks">أسبوع</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description">روبوت متقدم لتعلم مفاهيم الروبوتات والبرمجة بشكل أعمق</p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">التحكم الحركي</span></li>
+                                <li><span class="topic-tag">المستشعرات</span></li>
+                                <li><span class="topic-tag">الذكاء الاصطناعي</span></li>
+                                <li><span class="topic-tag">مشاريع متقدمة</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Training of Trainers -->
+                    <article class="program-card card card--training" data-category="training">
+                        <h3 class="program-card__title" data-translate="tot-title">تدريب المدربين (TOT)</h3>
+                        <div class="program-card__meta">
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">👨‍🏫👩‍🏫</span>
+                                <span class="meta-item__text" data-translate="tot-audience">للمعلمين</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-item__icon" aria-hidden="true">⏱️</span>
+                                <span class="meta-item__text"><span data-translate="program-duration">المدة</span>:
+                                    <span data-translate="program-tot-duration">مخصص</span></span>
+                            </div>
+                        </div>
+                        <p class="program-card__description" data-translate="tot-description">برنامج متخصص لتدريب
+                            المعلمين والمشرفين على منهجية روبوسيد التعليمية</p>
+                        <div class="program-card__topics">
+                            <h4 class="program-card__topics-title" data-translate="program-topics">المواضيع الرئيسية:
+                            </h4>
+                            <ul class="topic-list" role="list">
+                                <li><span class="topic-tag">المنهجية التعليمية</span></li>
+                                <li><span class="topic-tag">إدارة الفصول</span></li>
+                                <li><span class="topic-tag">التقييم والتطوير</span></li>
+                                <li><span class="topic-tag">أدوات التعليم</span></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Age Target Section -->
+        <section class="age-target" aria-labelledby="age-target-title">
+            <div class="container">
+                <h2 class="age-content" id="age-target-title" data-translate="age-title">الفئة العمرية: من 7 سنوات فما
+                    فوق</h2>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title" id="contact-title" data-translate="contact-title">اتصل بنا</h2>
+                    <p class="section-subtitle" data-translate="contact-subtitle">نحن هنا للإجابة على استفساراتك وتقديم
+                        الدعم</p>
+                </header>
+
+                <div class="contact-grid grid grid--2-cols">
+                    <div class="contact-info">
+                        <h3 class="contact-info__title" data-translate="contact-info">معلومات التواصل</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <span class="contact-method__icon" aria-hidden="true">📞</span>
+                                <a href="tel:00905510731192"
+                                    class="contact-method__link english-text">00905510731192</a>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/roboseed.academy/"
+                                class="social-link social-link--instagram" aria-label="انستغرام">
+                                <span class="social-link__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="white"
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="https://www.facebook.com/share/1Z6p1tgJ4d/"
+                                class="social-link social-link--facebook" aria-label="فيسبوك">
+                                <span class="social-link__icon">
+                                    <svg style="background:rgb(255, 255, 255); " xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" width="50" height="50">
+                                        <path fill="#1877F2"
+                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="https://wa.me/message/J6KA73FCB77EA1/" class="social-link social-link--whatsapp"
+                                aria-label="واتساب">
+                                <span class="social-link__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="45" height="45">
+                                        <path fill="WHITE"
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488" />
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" aria-labelledby="footer-title">
+        <div class="container">
+            <div class="footer-content grid grid--3-cols">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="https://lh3.googleusercontent.com/d/1tb5-nvankw9dWYscYZo1-KHRT7Ag_TEJ" alt="RoboSeed Academy" width="100px">
+                    </div>
+                    <p class="footer-tagline" data-translate="footer-tagline">زرع بذور الابتكار، حصاد مستقبل رقمي</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-links__title" data-translate="footer-links">روابط سريعة</h4>
+                    <a href="#hero" class="footer-link" data-translate="nav-home">الرئيسية</a>
+                    <a href="#vision-mission" class="footer-link" data-translate="nav-vision">الرؤية والرسالة</a>
+                    <a href="#programs" class="footer-link" data-translate="nav-programs">البرامج</a>
+                    <a href="#contact" class="footer-link" data-translate="nav-contact">اتصل بنا</a>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-links__title" data-translate="footer-contact">التواصل</h4>
+                    <a href="https://www.instagram.com/roboseed.academy/" class="footer-link"
+                        aria-label="انستغرام">instagram</a>
+                    <a href="https://www.facebook.com/share/1Z6p1tgJ4d/" class="footer-link"
+                        aria-label="فيسبوك">facebook</a>
+                    <a href="https://wa.me/message/J6KA73FCB77EA1/" class="footer-link" aria-label="واتساب">whatsapp</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> RoboSeed Academy. <span
+                        data-translate="footer-rights">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Amazon-Style Mobile Navigation
+        document.addEventListener('DOMContentLoaded', function () {
+            // Elements
+            const navToggle = document.querySelector('.nav-toggle');
+            const sidebarOverlay = document.querySelector('.sidebar-overlay');
+            const sidebar = document.querySelector('.sidebar');
+            const sidebarClose = document.querySelector('.sidebar-close');
+            const body = document.body;
+
+            // Open sidebar function
+            function openSidebar() {
+                sidebarOverlay.classList.add('active');
+                sidebar.classList.add('active');
+                navToggle.classList.add('active');
+                navToggle.setAttribute('aria-expanded', 'true');
+                body.style.overflow = 'hidden';
+
+                // Trap focus inside sidebar
+                document.querySelector('main').setAttribute('inert', '');
+
+                // Add event listener for escape key
+                document.addEventListener('keydown', handleEscapeKey);
+            }
+
+            // Close sidebar function
+            function closeSidebar() {
+                sidebarOverlay.classList.remove('active');
+                sidebar.classList.remove('active');
+                navToggle.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+                body.style.overflow = '';
+
+                // Remove inert attribute
+                document.querySelector('main').removeAttribute('inert');
+
+                // Remove event listener for escape key
+                document.removeEventListener('keydown', handleEscapeKey);
+            }
+
+            // Handle escape key press
+            function handleEscapeKey(event) {
+                if (event.key === 'Escape') {
+                    closeSidebar();
+                }
+            }
+
+            // Toggle sidebar when hamburger is clicked
+            if (navToggle) {
+                navToggle.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    if (sidebar.classList.contains('active')) {
+                        closeSidebar();
+                    } else {
+                        openSidebar();
+                    }
+                });
+            }
+
+            // Close sidebar when close button is clicked
+            if (sidebarClose) {
+                sidebarClose.addEventListener('click', closeSidebar);
+            }
+
+            // Close sidebar when clicking on overlay
+            if (sidebarOverlay) {
+                sidebarOverlay.addEventListener('click', function (e) {
+                    if (e.target === sidebarOverlay) {
+                        closeSidebar();
+                    }
+                });
+            }
+
+            // Close sidebar when clicking on sidebar links
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    setTimeout(closeSidebar, 300);
+                });
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function () {
+                if (window.innerWidth >= 1024 && sidebar.classList.contains('active')) {
+                    closeSidebar();
+                }
+            });
+
+            // Enhanced program filtering
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const programCards = document.querySelectorAll('.program-card');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const filterValue = this.getAttribute('data-filter');
+
+                    // Update active state
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('filter-btn--active');
+                        btn.setAttribute('aria-selected', 'false');
+                    });
+                    this.classList.add('filter-btn--active');
+                    this.setAttribute('aria-selected', 'true');
+
+                    // Filter programs
+                    programCards.forEach(card => {
+                        const shouldShow = filterValue === 'all' || card.getAttribute('data-category') === filterValue;
+
+                        if (shouldShow) {
+                            card.style.display = 'block';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 50);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                card.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+
+            // Language switching functionality
+            const langButtons = document.querySelectorAll('.lang-btn');
+            const htmlElement = document.documentElement;
+
+            // Language content storage
+            const translations = {
+                ar: {
+                    // Navigation & Skip Link
+                    'skip-link': 'انتقل إلى المحتوى الرئيسي',
+                    'nav-home': 'الرئيسية',
+                    'nav-vision': 'الرؤية والرسالة',
+                    'nav-programs': 'البرامج',
+                    'nav-contact': 'اتصل بنا',
+
+                    // Hero
+                    'hero-tagline': 'زرع بذور الابتكار، حصاد مستقبل رقمي',
+                    'hero-description': 'أكاديمية روبوسيد تقدم برامج تعليمية متقدمة في البرمجة والروبوتات للأطفال من سن 7 سنوات فما فوق',
+                    'hero-programs': 'استكشف البرامج',
+                    'hero-contact': 'اتصل بنا',
+
+                    // Vision & Mission
+                    'vision-title': 'رؤيتنا ورسالتنا',
+                    'vision-subtitle': 'نعمل على بناء جيل مبتكر قادر على قيادة المستقبل التكنولوجي',
+                    'vision-heading': 'الرؤية',
+                    'vision-text': 'أن نكون الرواد في تعليم البرمجة والروبوتات للأطفال في العالم العربي، ونشر ثقافة الابتكار التكنولوجي بين الأجيال الناشئة.',
+                    'mission-heading': 'الرسالة',
+                    'mission-text': 'تمكين الأطفال من عمر 7 سنوات فما فوق من مهارات البرمجة والروبوتات، وتطوير قدراتهم الإبداعية والتحليلية من خلال بيئة تعليمية محفزة وتجارب عملية مبتكرة.',
+
+                    // Programs
+                    'programs-title': 'برامجنا التعليمية',
+                    'programs-subtitle': 'برامج متخصصة مصممة خصيصًا لتنمية مهارات الأطفال التقنية',
+                    'filter-all': 'جميع البرامج',
+                    'filter-programming': 'برمجة',
+                    'filter-robotics': 'روبوتات',
+                    'filter-training': 'تدريب المدربين',
+                    'program-age': 'العمر',
+                    'program-duration': 'المدة',
+                    'program-topics': 'المواضيع الرئيسية',
+                    'program-weeks': 'أسبوع',
+                    'program-years': 'سنوات',
+                    'program-tot-duration': 'مخصص',
+                    'tot-title': 'تدريب المدربين (TOT)',
+                    'tot-audience': 'للمعلمين',
+                    'tot-description': 'برنامج متخصص لتدريب المعلمين والمشرفين على منهجية روبوسيد التعليمية',
+
+                    // Age Target
+                    'age-title': 'الفئة العمرية: من 7 سنوات فما فوق',
+
+                    // Contact
+                    'contact-title': 'اتصل بنا',
+                    'contact-subtitle': 'نحن هنا للإجابة على استفساراتك وتقديم الدعم',
+                    'contact-info': 'معلومات التواصل',
+
+                    // Footer
+                    'footer-tagline': 'زرع بذور الابتكار، حصاد مستقبل رقمي',
+                    'footer-links': 'روابط سريعة',
+                    'footer-contact': 'التواصل',
+                    'footer-rights': 'جميع الحقوق محفوظة.',
+
+                    // Sidebar
+                    'menu-title': 'القائمة',
+                    'welcome-message': 'مرحباً بك في روبوسيد',
+                    'explore-programs': 'استكشف برامجنا التعليمية',
+                    'privacy-policy': 'سياسة الخصوصية',
+                    'terms-service': 'شروط الخدمة',
+                    'help-center': 'مركز المساعدة'
+                },
+                en: {
+                    // Navigation & Skip Link
+                    'skip-link': 'Skip to main content',
+                    'nav-home': 'Home',
+                    'nav-vision': 'Vision & Mission',
+                    'nav-programs': 'Programs',
+                    'nav-contact': 'Contact',
+
+                    // Hero
+                    'hero-tagline': 'Planting seeds of innovation, harvesting a digital future',
+                    'hero-description': 'RoboSeed Academy offers advanced educational programs in programming and robotics for children aged 7 and above',
+                    'hero-programs': 'Explore Programs',
+                    'hero-contact': 'Contact Us',
+
+                    // Vision & Mission
+                    'vision-title': 'Our Vision & Mission',
+                    'vision-subtitle': 'Building an innovative generation capable of leading the technological future',
+                    'vision-heading': 'Vision',
+                    'vision-text': 'To be pioneers in teaching programming and robotics to children in the Arab world, and spreading the culture of technological innovation among young generations.',
+                    'mission-heading': 'Mission',
+                    'mission-text': 'Empowering children aged 7 and above with programming and robotics skills, and developing their creative and analytical abilities through a stimulating educational environment and innovative practical experiences.',
+
+                    // Programs
+                    'programs-title': 'Our Educational Programs',
+                    'programs-subtitle': 'Specialized programs specifically designed to develop children\'s technical skills',
+                    'filter-all': 'All Programs',
+                    'filter-programming': 'Programming',
+                    'filter-robotics': 'Robotics',
+                    'filter-training': 'Training',
+                    'program-age': 'Age',
+                    'program-duration': 'Duration',
+                    'program-topics': 'Key Topics',
+                    'program-weeks': 'weeks',
+                    'program-years': 'years',
+                    'program-tot-duration': 'Custom',
+                    'tot-title': 'Training of Trainers (TOT)',
+                    'tot-audience': 'For Teachers',
+                    'tot-description': 'A specialized program for training teachers and supervisors on the RoboSeed educational methodology',
+
+                    // Age Target
+                    'age-title': 'Target Age: 7 years and above',
+
+                    // Contact
+                    'contact-title': 'Contact Us',
+                    'contact-subtitle': 'We\'re here to answer your inquiries and provide support',
+                    'contact-info': 'Contact Information',
+
+                    // Footer
+                    'footer-tagline': 'Planting seeds of innovation, harvesting a digital future',
+                    'footer-links': 'Quick Links',
+                    'footer-contact': 'Contact',
+                    'footer-rights': 'All rights reserved.',
+
+                    // Sidebar
+                    'menu-title': 'Menu',
+                    'welcome-message': 'Welcome to RoboSeed',
+                    'explore-programs': 'Explore our programs',
+                    'privacy-policy': 'Privacy Policy',
+                    'terms-service': 'Terms of Service',
+                    'help-center': 'Help Center'
+                }
+            };
+
+            // Set initial language
+            let currentLang = 'ar';
+
+            // Language switch functionality
+            langButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const lang = this.getAttribute('data-lang');
+
+                    if (lang !== currentLang) {
+                        langButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            btn.setAttribute('aria-pressed', 'false');
+                        });
+                        this.classList.add('active');
+                        this.setAttribute('aria-pressed', 'true');
+
+                        switchLanguage(lang);
+                        currentLang = lang;
+                    }
+                });
+            });
+
+            function switchLanguage(lang) {
+                htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+                htmlElement.setAttribute('lang', lang);
+
+                Object.keys(translations[lang]).forEach(key => {
+                    const elements = document.querySelectorAll(`[data-translate="${key}"]`);
+                    elements.forEach(element => {
+                        element.textContent = translations[lang][key];
+                    });
+                });
+
+                updateTypography(lang);
+            }
+
+            function updateTypography(lang) {
+                const body = document.body;
+
+                if (lang === 'ar') {
+                    body.classList.remove('english-layout');
+                    body.classList.add('arabic-layout');
+                } else {
+                    body.classList.remove('arabic-layout');
+                    body.classList.add('english-layout');
+                }
+            }
+
+            // Update current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#') {
+                        e.preventDefault();
+                        const target = document.querySelector(link.getAttribute('href'));
+                        if (target) {
+                            target.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Lazy load images
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            img.classList.add('loaded');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(img => imageObserver.observe(img));
+            } else {
+                // Fallback for browsers without IntersectionObserver
+                lazyImages.forEach(img => {
+                    img.classList.add('loaded');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
